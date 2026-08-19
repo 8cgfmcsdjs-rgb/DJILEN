@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop All Collections — DJILEN</title>
+<meta name="description" content="Shop CHIMEN 001, The Origin Collection — varsity jackets, hoodies, oversized tees, sweatpants, caps, bags, jewelry, and accessories for Men, Women, and Kids.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-strip">
+    <div class="wrap">
+      <span>COMPLIMENTARY SHIPPING ON ORDERS OVER $150</span>
+      <span class="accent">&nbsp;&middot;&nbsp;</span>
+      <span>NOW LIVE — CHIMEN 001, THE ORIGIN COLLECTION</span>
+    </div>
+  </div>
+  <div class="wrap header-bar">
+    <a href="index.html" class="brand">
+      <span data-mark="34"></span>
+      <span>DJILEN<small>Find Your Way.</small></span>
+    </a>
+    <nav class="main-nav">
+      <a href="shop.html?dept=men" data-page="shop.html">Men</a>
+      <a href="shop.html?dept=women" data-page="shop.html">Women</a>
+      <a href="shop.html?dept=kids" data-page="shop.html">Kids</a>
+      <a href="shop.html" data-page="shop.html" class="active">Collections</a>
+      <a href="lookbook.html" data-page="lookbook.html">Lookbook</a>
+      <a href="about.html" data-page="about.html">Our Story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" data-search-open aria-label="Search">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+      </button>
+      <button class="icon-btn" data-cart-open aria-label="Open shopping bag">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+        <span class="cart-count">0</span>
+      </button>
+      <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ SEARCH OVERLAY ============ -->
+<div class="search-panel">
+  <div>
+    <form onsubmit="return false;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+      <input type="text" placeholder="Search the collection" autocomplete="off">
+      <button type="button" class="search-close" aria-label="Close search">&times;</button>
+    </form>
+    <div class="search-results"></div>
+  </div>
+</div>
+
+<!-- ============ PAGE HEADER ============ -->
+<section class="page-header">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Collections</span></div>
+    <div class="eyebrow">CHIMEN 001</div>
+    <h1 data-shop-title>The Origin Collection</h1>
+    <p class="desc" data-shop-desc>Every piece in the DJILEN archive &mdash; jackets, fleece, tees, and accessories built for the road ahead.</p>
+  </div>
+</section>
+
+<!-- ============ SHOP GRID ============ -->
+<section class="shop-band" style="padding-top:50px;">
+  <div class="wrap">
+
+    <div class="filter-bar">
+      <div class="filter-group" aria-label="Filter by department">
+        <button class="chip" data-filter-dept="all">All</button>
+        <button class="chip" data-filter-dept="men">Men</button>
+        <button class="chip" data-filter-dept="women">Women</button>
+        <button class="chip" data-filter-dept="kids">Kids</button>
+      </div>
+      <div class="filter-group" aria-label="Filter by category">
+        <button class="chip" data-filter-type="all">All Types</button>
+        <button class="chip" data-filter-type="varsity-jackets">Varsity Jackets</button>
+        <button class="chip" data-filter-type="hoodies">Hoodies</button>
+        <button class="chip" data-filter-type="tees">Oversized Tees</button>
+        <button class="chip" data-filter-type="sweatpants">Sweatpants</button>
+        <button class="chip" data-filter-type="caps">Caps</button>
+        <button class="chip" data-filter-type="bags">Bags</button>
+        <button class="chip" data-filter-type="jewelry">Jewelry</button>
+        <button class="chip" data-filter-type="accessories">Accessories</button>
+      </div>
+    </div>
+
+    <div class="filter-bar" style="border-top:none; margin-bottom:36px;">
+      <span class="filter-count">0 pieces</span>
+      <select class="sort-select" aria-label="Sort products">
+        <option value="featured">Sort: Featured</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name-asc">Name: A&ndash;Z</option>
+      </select>
+    </div>
+
+    <div class="product-grid"></div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="newsletter">
+  <div class="wrap newsletter-inner">
+    <div class="eyebrow" style="justify-content:center;">STAY ON THE ROAD</div>
+    <h2>Join the List</h2>
+    <p>New drops, restocks, and the stories behind them &mdash; straight to your inbox. No noise.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit">Subscribe &rarr;</button>
+    </form>
+    <div class="newsletter-success">You're in. Welcome to DJILEN.</div>
+    <div class="newsletter-error">Please enter a valid email address.</div>
+    <div class="newsletter-note">By subscribing you agree to receive marketing emails. Unsubscribe anytime.</div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <span data-mark="30"></span>
+      <div class="brand" style="margin-top:14px;">DJILEN</div>
+      <p>Premium streetwear and minimalist luxury rooted in identity, journey, and legacy. Find your way.</p>
+    </div>
+    <div class="footer-col">
+      <h6>Shop</h6>
+      <ul>
+        <li><a href="shop.html?dept=men">Men</a></li>
+        <li><a href="shop.html?dept=women">Women</a></li>
+        <li><a href="shop.html?dept=kids">Kids</a></li>
+        <li><a href="shop.html?type=varsity-jackets">Varsity Jackets</a></li>
+        <li><a href="shop.html?type=jewelry">Jewelry</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h6>About</h6>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h6>Support</h6>
+      <ul>
+        <li><a href="#">Shipping &amp; Returns</a></li>
+        <li><a href="#">Size Guide</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Track Order</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; 2026 DJILEN. All rights reserved.</span>
+    <div class="footer-socials">
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="TikTok">TT</a>
+      <a href="#" aria-label="X">X</a>
+    </div>
+    <span>FIND YOUR WAY.</span>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay"></div>
+<aside class="cart-drawer">
+  <div class="cart-head">
+    <h3>Your Bag</h3>
+    <button class="cart-close" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="cart-items"></div>
+  <div class="cart-foot">
+    <div class="cart-subtotal"><span>Subtotal</span><b>$0</b></div>
+    <p class="note">Shipping and taxes calculated at checkout. Complimentary shipping over $150.</p>
+    <button class="btn btn-solid" data-checkout>Checkout</button>
+  </div>
+</aside>
+
+<script src="assets/js/products.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/shop.js"></script>
+</body>
+</html>
